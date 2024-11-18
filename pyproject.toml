@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "mininote"
+version = "0.1.0"
+description = ""
+authors = ["MurlokReal <kirill.skrypnik080@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.5"
+uvicorn = {extras = ["standard"], version = "^0.32.0"}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
